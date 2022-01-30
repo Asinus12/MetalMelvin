@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+        <title>Metal Melvin's projects</title>
+    </head>
+    <body>
+
+    <!-- BANNER -->
+    <header>
+        <h1 id="banner"> 
+            <a href="index.html"><img style="vertical-align:middle" src="./pics/mmLogo/mmlogoPurple.png"></a>
+            Projects
+        </h1>
+    </header>
+
+
+   
+
+    <div class="container-fluid">
+        <div class="row">
+    
+
+            <!-- Left side -->
+            <div class="col-lg-6" style="background-color: rgba(0, 0, 0, 0.5);">
+                <img src="./pics/CoilGun/dcCharger.jpg" class="avatar rounded-circle "></a>
+                <a id="r_based" href="./projects.html"> Single Stage Coil Gun </a>
+                <br>
+                <img src="./pics/MarxGenerator/marx.jpg" class="avatar rounded-circle "></a>    
+                <a id="r_based1" href="./projects.html"> Center Fed Marx Generator</a>
+                <br> 
+                <img src="./pics/oscilator/testSineGenerator.jpg" class="avatar rounded-circle "></a>
+                <a id="r_based2" href="./projects.html"> 27Mhz Harmonic Oscillator </a>
+                <br>
+                <img src="./pics/AnchorMonitor/stm32f103.jpg" class="avatar rounded-circle "></a>
+                <a id="r_based3" href="./projects.html"> Acoustic Communicator</a>
+                <br> 
+            </div>
+            <!-- Right side  -->
+            <div class="col-lg-6" style="background-color: rgba(0, 0, 0, 0.5);">
+                <h1 > Brief: </h1>
+
+                <div id="chngDiv" class="w-50 mx-auto" >
+                    ...
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    
+
+    <footer>2021, metalmelvin.com</footer>
+    
+
+
+
+    
+    <!-- javascript-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+    <script>
+
+        let textBuffer = "<h1>Single Stage Coil Gun</h1> \
+                           500V DC-DC flyback converter based coil (Gauss) gun. \
+                           At capacitor energy at about 10J, the projectile reaches exit velocity of about 5 m/s.  \
+                           All acceleration happens in 0,5 giving a rough estimate of maximum g-force of 400Gs\
+                           ";
+
+        var textBuffer1 = " <h1> Center Fed Marx Generator</h1>\
+                            300 kV Marx Generator producing 15cm ionizing discharges. Driven with ZVS driver \
+                            or cockroft-walton multiplier. Spark energy of about ...";
+
+        var textBuffer2 = " <h2> 27 Mhz Harmonic Oscillator</h2> Colpits crystal oscillator at 27.195MhzMedium frequency range oscilator with 2N5109 wideband amplifier and 4th order \
+                            chebysev filter used as test signal; "
+
+
+        var textBuffer3 = " <h2> Acoustinc Communicator  </h2> Initialization code for I2C, SPI, timers and other periphery  \
+                            Linux based toolchain (st-link, gcc, arm-none-eabi) ";
+
+
+        $('#r_based').data('textToggle', textBuffer).hover(function (e) {
+            $('#chngDiv').html(textBuffer)
+            console.log('hovering on', $('#r_based'));
+        }),  
+
+        $('#r_based1').data('textToggle1', textBuffer1).hover(function (e) {
+            $('#chngDiv').html(textBuffer1);
+            console.log('hovering on', $('#r_based1'));
+
+        })
+        
+        $('#r_based2').data('textToggle2', textBuffer2).hover(function (e) {
+            $('#chngDiv').html(textBuffer2);
+            console.log('hovering on', $('#r_based2'));
+
+        })
+        
+        $('#r_based3').data('textToggle3', textBuffer3).hover(function (e) {
+            $('#chngDiv').html(textBuffer3);
+            console.log('hovering on', $('#r_based3'));
+
+        })
+        ;
+
+    </script>
+    </body> <!--    End Of Body         -->
+</html> <!--        End Of HTML         -->
+<!--                End of Document     -->

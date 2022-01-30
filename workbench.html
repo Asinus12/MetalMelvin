@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+        <link rel="stylesheet" href="./style.css">
+        <title>Metal Melvin's Workbench</title>
+    </head>
+    <body>
+
+    <!-- BANNER -->
+    <header>
+        <h1 id="banner"> 
+            <a href="index.html"><img style="vertical-align:middle" src="./pics/mmLogo/mmlogoPurple.png"></a>
+            Workbench
+        </h1>
+    </header>
+
+
+    <!-- Sortable Line 1 -->
+    <div class="row" id="sortable">
+
+        <div class="col-md-3" >
+            <div class="card-sub">
+                <div class="container-fluid">
+                    <div class="row mt-4"> 
+                        
+                        <div class="item col-sm-6 col-md-4 mb3">
+                            <a href="./pics/smithChart2.png" class="fancybox" data-fancybox="gallery1">
+                                <img src="./pics/smithChart2.png" width="50%" height="50%">
+                            </a>
+                        </div>
+            
+                        <div class="item col-sm-6 col-md-4 mb3">
+                            <a href="./pics/smithChart1.gif" class="fancybox" data-fancybox="gallery1">
+                                <img src="./pics/smithChart1.gif" width="50%" height="50%">
+                            </a>
+                        </div>
+
+                        <div class="item col-sm-6 col-md-4 mb3">
+                            <a href="./pics/smithChart1.gif" class="fancybox" data-fancybox="gallery1">
+                                <img src="./pics/smithChart1.gif" width="50%" height="50%">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3" >
+            <div class="card-sub"> 
+                    <input type="inducatance" placeholder="Inductance" id="firstNumber"  size="15" >
+                    <select id="capx">
+                        <option value="-3">[mF]</option>
+                        <option value="-6">[uF]</option>
+                        <option value="-9">[nf]</option>
+                        <option value="-12">[pF]</option>
+                    </select>
+                    <br>
+                    <input type="Capacitance" placeholder="Capacitance" id="secondNumber" size="15" >
+                    <select id="indx" > 
+                        <option value="1">[H]</option>
+                        <option value="-3">[mH]</option>
+                        <option value="-6">[uH]</option>
+                        <option value="-9">[nH]</option>
+                    </select>
+                    <br>
+                    <button  onclick="divideBy()" class="btn btn-secondary" >Resonant Frequency</button>
+                    <br>
+                    <textarea id="fresResult" size="20" rows="10"></textarea>   
+            </div>
+        </div>
+
+        <div class="col-md-3" draggable="false" >
+            <div class="card-sub"> 
+                 <div class="embed-responsive embed-responsive-16by9 fancybox" id="show">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/blalAktxFoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3" >
+            <div class="card-sub"> 
+                
+                <input type="inducatance" placeholder="Inductance" id="firstNumber"  size="15" >
+                <select id="capx">
+                    <option value="-3">[mF]</option>
+                    <option value="-6">[uF]</option>
+                    <option value="-9">[nf]</option>
+                    <option value="-12">[pF]</option>
+                </select>
+                <br>
+                <input type="Capacitance" placeholder="Capacitance" id="secondNumber" size="15" >
+                <select id="indx" > 
+                    <option value="1">[H]</option>
+                    <option value="-3">[mH]</option>
+                    <option value="-6">[uH]</option>
+                    <option value="-9">[nH]</option>
+                </select>
+                <br>
+                <button  onclick="divideBy()" class="btn btn-secondary" >Resonant Frequency</button>
+                <br>
+                <textarea id="fresResult" size="20" rows="10"></textarea>   
+            </div>
+        </div>
+
+    </div> <!-- line end -->
+
+
+      <!-- Sortable Line 2 -->
+      <div class="row" id="sortable1">
+
+        <div class="col-md-3" >
+            <div class="card-sub">
+                <div class="container-fluid">
+                    <div class="row mt-4"> 
+                        
+                        <div class="item col-sm-6 col-md-4 mb3">
+                            <a href="./pics/smithChart2.png" class="fancybox" data-fancybox="gallery1">
+                                <img src="./pics/smithChart2.png" width="50%" height="50%">
+                            </a>
+                        </div>
+            
+                        <div class="item col-sm-6 col-md-4 mb3">
+                            <a href="./pics/smithChart1.gif" class="fancybox" data-fancybox="gallery1">
+                                <img src="./pics/smithChart1.gif" width="50%" height="50%">
+                            </a>
+                        </div>
+
+                        <div class="item col-sm-6 col-md-4 mb3">
+                            <a href="./pics/smithChart1.gif" class="fancybox" data-fancybox="gallery1">
+                                <img src="./pics/smithChart1.gif" width="50%" height="50%">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3" >
+            <div class="card-sub"> 
+                    <input type="inducatance" placeholder="Inductance" id="firstNumber"  size="15" >
+                    <select id="capx">
+                        <option value="-3">[mF]</option>
+                        <option value="-6">[uF]</option>
+                        <option value="-9">[nf]</option>
+                        <option value="-12">[pF]</option>
+                    </select>
+                    <br>
+                    <input type="Capacitance" placeholder="Capacitance" id="secondNumber" size="15" >
+                    <select id="indx" > 
+                        <option value="1">[H]</option>
+                        <option value="-3">[mH]</option>
+                        <option value="-6">[uH]</option>
+                        <option value="-9">[nH]</option>
+                    </select>
+                    <br>
+                    <button  onclick="divideBy()" class="btn btn-secondary" >Resonant Frequency</button>
+                    <br>
+                    <textarea id="fresResult" size="20" rows="10"></textarea>   
+            </div>
+        </div>
+
+        <div class="col-md-3" draggable="false" >
+            <div class="card-sub"> 
+                 <div class="embed-responsive embed-responsive-16by9 fancybox" id="show">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/blalAktxFoI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3" >
+            <div class="card-sub"> 
+                
+                <input type="inducatance" placeholder="Inductance" id="firstNumber"  size="15" >
+                <select id="capx">
+                    <option value="-3">[mF]</option>
+                    <option value="-6">[uF]</option>
+                    <option value="-9">[nf]</option>
+                    <option value="-12">[pF]</option>
+                </select>
+                <br>
+                <input type="Capacitance" placeholder="Capacitance" id="secondNumber" size="15" >
+                <select id="indx" > 
+                    <option value="1">[H]</option>
+                    <option value="-3">[mH]</option>
+                    <option value="-6">[uH]</option>
+                    <option value="-9">[nH]</option>
+                </select>
+                <br>
+                <button  onclick="divideBy()" class="btn btn-secondary" >Resonant Frequency</button>
+                <br>
+                <textarea id="fresResult" size="20" rows="10"></textarea>   
+            </div>
+        </div>
+
+    </div> <!-- line end -->
+
+    
+    
+    
+
+    <!-- Other Web Links -->
+    <div style="background-color:rgba(0, 0, 0, 0.5);">
+        <a href="https://www.google.com"> google </a>
+        <a href="https://www.toroids.info"> hombrew rf circuits </a>
+        <a href="https://www.toroids.info"> toroids.info </a>
+    </div>
+
+    <!-- Youtubers -->
+    <div style="background-color:rgba(0, 0, 0, 0.5);">
+        <a href="https://www.youtube.com"> <img class="logo" src="./pics/ytlogo.png" alt="Card image cap"> </a>
+        <a href="https://www.youtube.com/user/w2aew"> W2AEW </a> &nbsp; 
+        <a href="https://www.youtube.com/c/AppliedScience"> Applied Science</a>&nbsp;
+        <a href="https://www.youtube.com/c/MarcoReps"> Marco Reps</a>&nbsp;
+        <a href="https://www.youtube.com/c/EevblogDave"> EEVBLOG</a>&nbsp;
+        <a href="https://www.youtube.com/c/WhatsACreel"> Creel</a>&nbsp;
+        <a href="https://www.youtube.com/channel/UCsK99WXk9VhcghnAauTBsbg">Joe Smith</a>&nbsp;
+        <a href="https://www.youtube.com/c/MrCarlsonsLab"> Mr Carlsons Lab</a>&nbsp;
+        <a href="https://www.youtube.com/user/vk2zay"> vk2zay</a>&nbsp;
+    </div>
+
+    
+    <footer>2021, metalmelvin.com</footer>
+
+    <!-- javascript-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.js https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.min.js"></script>
+    <script src="./PureSnow.js"></script>
+
+
+    </body> <!--    End Of Body         -->
+</html> <!--        End Of HTML         -->
+<!--                End of Document     -->

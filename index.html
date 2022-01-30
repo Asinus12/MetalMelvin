@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+        <title>Metal Melvin's home</title>
+    </head>
+    <body>
+
+    <!-- Snowing effet -->
+    <!-- <div id="snow"></div>  -->
+
+    <!-- BANNER-->
+        <h1 id="banner"> 
+          <a href="index.html"><img style="vertical-align:middle" src="./pics/mmLogo/mmlogoPurple.png"></a>
+          Metal Melvin's Home 
+        </h1>
+
+        Site is under construction!
+
+    <!-- Card Group -->
+    <div class="card-group">
+
+        <!-- PROJECTS CARD -->
+        <div class="card border-dark">
+
+            <!-- <img class="card-img-top logo" src="./pics/stuff.png" alt="Card image cap"> -->
+            <div class="card-body">
+                <h1 class="card-title"><a href="./projects.html"> Projects </a></h1>
+                <p class="card-text"> Alphabetical list of projects with short descriptions. For content search use the form below </p>
+
+        
+                <!-- Carousel-->
+                <div id="carousel" class="carousel slide" data-ride="carousel" style="width:300px; ">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="4000">
+                            <a href="./workbench.html"><img src="./pics/AnchorMonitor/stm32f103.jpg" class="d-block rounded-circle" width="200px" height="200px"></a>
+                        </div>
+                        <div class="carousel-item" data-interval="4000">
+                            <a href="./workbench.html"><img src="./pics/MarxGenerator/marx.jpg" class="d-block rounded-circle" width="200px" height="200px"></a>
+                        </div>
+                        <div class="carousel-item" data-interval="4000">
+                            <a href="./workbench.html"><img src="./pics/CoilGun/dcCharger.jpg" class="d-block rounded-circle" width="200px" height="200px" ></a>
+                        </div>
+                        <div class="carousel-item" data-interval="4000">
+                            <a href="./workbench.html"><img src="./pics/stm32bluetooth.jpg" class="d-block rounded-circle" width="200px" height="200px" ></a>
+                        </div>
+                    </div>
+                </div> 
+
+
+                <br>
+
+                <!-- Search Form-->
+                <form>
+                    <div class="form-group"  >
+                    <input type="text" class="form-control mx-auto w-50" id="inputSearch" aria-describedby="inputSearchHelp">
+                    </div>
+                    <button type="submit" class="btn btn-secondary">Search</button>
+                </form>
+
+            </div>
+
+        </div>
+
+        <!-- WORKBENCH CARD -->
+        <div class="card border-dark">
+            <div class="card-body">
+                <h1 class="card-title"><a href="./workbench.html"> Workbench </a></h1>
+                <p class="card-text"> Customizible workbench with frequently used calculators, charts, embedded player, links and other handy stuff.  
+                </p>
+
+                <br>
+                <h1 class="card-title">Upcoming ... </h1>
+
+
+                <ul class="w-75 mx-auto">
+                    <li> Textronix TDS320 Oscilloscope repair </li>
+                    <li> 10m SSB Superheterodyne receiver </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- GALLERY CARD -->
+        <div class="card border-dark">
+            <div class="card-body">
+                <h1 class="card-title"><a href="./gallery.html"> Gallery</a></h1>
+                <p class="card-text">
+                    Photos, videos and other multimedia from past projects.
+                </p>
+                <br>
+                    <video class="center video-mask" width="400" height="200" style="margin: auto;" controls autoplay loop mute alt="cloud cham">
+                        <source src="./pics/videos/cchamber.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                    </video> 
+                
+                
+            </div>
+        </div>
+
+        <!-- ABOUT CARD -->
+        <div class="card border-dark">
+            <div class="card-body">
+                <h1 class="card-title"><a href="./about.html"> About </a></h1>
+                <p class="card-text"> Send me a message </p>
+
+
+                <!-- <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Rate my Page 
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">5</a>
+                    <a class="dropdown-item" href="#">4</a>
+                    <a class="dropdown-item" href="#">3</a>
+                    <a class="dropdown-item" href="#">2</a>
+                    <a class="dropdown-item" href="#">1</a>
+                    </div>
+                </div> -->
+
+         
+                <!-- Contact Form -->
+                <div class="contact-form w-50 mx-auto" >
+                    <form id="contact-form" method="post" action ="formHandler.php">
+                        <input name="name" type="text" class="form-control" placeholder="Your name" required>
+                        <input name="email" type="email" class="form-control" placeholder="Your email" required>
+            
+                        <textarea name="message" class="form-control" placeholder="Your message" row="4" required> </textarea>
+                        
+                        <input type="submit" class="form-control submit btn btn-secondary " value="SEND MESSAGE">
+            
+                    </form>
+            
+                </div>
+
+                <br>
+                Follow me on Youtube!
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+    <footer>2021, metalmelvin.com</footer>
+    
+
+
+
+    <!-- javascript-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./PureSnow.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    
+</body> <!--    End Of Body         -->
+</html> <!--        End Of HTML         -->
+<!--                End of Document     -->

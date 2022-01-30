@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 2px;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(./pics/mmArtwork/sobaCartoon311.jpg);
+    background-size: cover; /* contain, cover, auto */
+    background-position: center; /* center, top, bottom */
+    background-repeat: repeat-y; /* no repeat, repeat, repeat-x, .. */
+    overflow: scroll; /* hidden, cover, scroll */ 
+    text-align: center;
+    /* font-family: "Brush Script MT", cursive;  */
+    font-family: "Times New Roman", Times, serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-size: 30px;
+    line-height: 35px;
+    color:white
+
+}
+
+
+a {
+    /* filter: drop-shadow(0 0 10px rgb(121, 11, 131)); */
+    color: rgb(192, 10, 177);
+}
+
+h1 {
+    /* filter: drop-shadow(0 0 10px rgb(121, 11, 131)); */
+    color: rgb(192, 10, 177);
+}
+
+
+
+input {
+    font-family: Consolas,monaco,monospace; 
+    margin: 10px;
+    font-size: 15px;
+}
+
+
+textarea {
+    margin:10px;
+    width: 100%;
+    height: 10em; /*150px;*/
+    font-family: Consolas,monospace; 
+    font-size: 12px; 
+    line-height: 20px;
+  }
+/********************** MY ELEMENTS ******************************/ 
+#banner{
+    font-size: 70px;
+    color: rgb(192, 10, 177);
+    filter: drop-shadow(0 0 10px rgb(121, 11, 131));
+    text-align: left;
+}
+
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    margin: 10px 10px;
+    opacity: 100%;    
+    vertical-align: left;
+    align-items: left;
+    justify-content: left; 
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    border-radius: 20px;
+
+}
+
+.snowflake {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: linear-gradient(rgb(13, 5, 22), rgb(17, 0, 0)); /* Workaround for Chromium's selective color inversion */
+    border-radius: 50px;
+    filter: drop-shadow(0 0 10px rgb(121, 11, 131));
+}
+
+ /****************** BOOTSTRAP ******************/ 
+ .carousel-inner img {
+    margin: auto;
+  }
+
+ #carousel {
+    background-position:center;
+    margin: auto;
+}
+
+
+.card{
+    margin: 10px;
+    color: inherit; /* inhertis from body */
+    background-color: rgba(0, 0, 0, 0.5); /* black with 0.5 opacity */
+}
+
+.container{
+    width: 100vw;
+    height: 80vh;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* black with 0.5 opacity */
+
+}
+/* effects */
+a:hover {
+    color: rgb(192, 10, 177);
+    filter: drop-shadow(0 0 15px rgb(121, 11, 131));
+
+} 
+
+
+.item:hover{
+    filter: brightness(80%)
+}
+
+
+.item{
+    transition: .5s ease-in-out;
+}
+
+
+.video-mask{
+    width: 350px;
+    border-radius: 20px; 
+    overflow: hidden; 
+}
+
+footer {
+    position: fixed;
+    padding: 10px 10px 0px 10px;
+    bottom: 0;
+    width: 100%;
+    /* Height of the footer*/ 
+    height: 40px;
+    /* background: rgba(0, 0, 0, 0.5);  */
+
+}
+
+
+
+/* lkj */
+
+.stretch-card>.card {
+    width: 100%;
+    min-width: 100%
+}
+
+
+.flex {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto
+}
+
+@media (max-width:991.98px) {
+    .padding {
+        padding: 1.5rem
+    }
+}
+
+@media (max-width:767.98px) {
+    .padding {
+        padding: 1rem
+    }
+}
+
+.padding {
+    padding: 3rem !important
+}
+
+.card-sub {
+    cursor: move;
+    border: none;
+    -webkit-box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.05), 0 -2px 1px -2px rgba(0, 0, 0, 0.04), 0 0 0 -1px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 1px 2px rgba(0, 0, 0, 0.05), 0 -2px 1px -2px rgba(0, 0, 0, 0.04), 0 0 0 -1px rgba(0, 0, 0, 0.05)
+}
+
+.card-img-top {
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px)
+}
+
+.card-block {
+    padding: 1.25rem;
+    background-color: #fff !important
+}
